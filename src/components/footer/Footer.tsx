@@ -1,6 +1,8 @@
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex, HStack } from '@chakra-ui/react';
+import { footerCompany, footerPlatform } from '../../store';
 import { globalStyles } from '../../styles';
 import { ColumnFlex } from '../shared';
+import { FooterCard } from './FooterCard';
 import { FooterLogo } from './FooterLogo';
 import { FooterSocials } from './FooterSocials';
 
@@ -15,6 +17,13 @@ export const Footer = () => {
           flex='1'
         >
           <FooterLogo />
+
+          <Box h='300px' border='2px solid #010B2E' ml='10' />
+
+          <HStack justify='space-evenly' flex='1' align='flex-start'>
+            <FooterCard header='Platform' list={footerPlatform} />
+            <FooterCard header='Company' list={footerCompany} />
+          </HStack>
         </Flex>
 
         <ColumnFlex

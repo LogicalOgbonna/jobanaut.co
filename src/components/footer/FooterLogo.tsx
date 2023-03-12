@@ -11,7 +11,7 @@ export const FooterLogo = () => {
       <Text
         fontSize={globalStyles.textFontSize}
         fontWeight={300}
-        fontFamily={globalStyles.fontFamilyLight}
+        fontFamily={globalStyles.fontFamilyXLight}
         _hover={{
           opacity: 0.8,
         }}

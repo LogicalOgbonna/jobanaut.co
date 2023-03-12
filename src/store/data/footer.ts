@@ -29,3 +29,21 @@ export const footerSocialsLinks: NavModel[] = [
   { id: nanoid(), path: '#', name: 'Copyright' },
   { id: nanoid(), path: '#', name: 'Use of Terms & Condition' },
 ];
+
+
+export const footerPlatform: NavModel[] = [
+  { id: nanoid(), path: '#', name: 'Find Jobs' },
+  { id: nanoid(), path: '#', name: 'Apply for jobs' },
+  { id: nanoid(), path: '#', name: 'Latest jobs' },
+  { id: nanoid(), path: '#', name: 'FAQ' },
+  { id: nanoid(), path: '#', name: 'Pricing' },
+  { id: nanoid(), path: '#', name: 'Referrals' },
+];
+
+export const footerCompany: NavModel[] = [
+  { id: nanoid(), path: '#', name: 'About us ' },
+  { id: nanoid(), path: '#', name: 'Blog' },
+  { id: nanoid(), path: '#', name: 'Newsletter' },
+  { id: nanoid(), path: '#', name: 'Jobs' },
+  { id: nanoid(), path: '#', name: 'Press' },
+];

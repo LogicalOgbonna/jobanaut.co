@@ -1,4 +1,12 @@
 export const globalStyles = {
+  containerWidth: {
+    base: '100%',
+    lg: '95%',
+    xl: '1020px',
+    '2xl': '1200px',
+  },
+  fullWidth: '100%',
+  fullHeight: '100vh',
   primaryDarkColor: '#010821',
   primaryColor: '#010b2e',
   whiteColor: '#fff',

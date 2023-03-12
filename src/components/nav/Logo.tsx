@@ -37,7 +37,7 @@ export const Logo = ({ showDesc, image }: Props) => {
               color={globalStyles.whiteColor}
               fontWeight={globalStyles.normalFontWeight}
               fontSize={globalStyles.textFontSize}
-              opacity={0.7}
+              opacity={globalStyles.textOpacity}
             >
               World-class automated job applier
             </Text>

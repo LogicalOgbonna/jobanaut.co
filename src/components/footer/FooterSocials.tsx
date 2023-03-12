@@ -8,9 +8,10 @@ export const FooterSocials = () => {
     <Link to={link.path} key={link.id}>
       <Text
         fontSize={globalStyles.textFontSize}
-        fontWeight={400}
         fontFamily={globalStyles.fontFamily}
         color={globalStyles.whiteColor}
+        opacity={globalStyles.textOpacity}
+        _hover={globalStyles.hoverOpacity}
       >
         {link.name}
       </Text>

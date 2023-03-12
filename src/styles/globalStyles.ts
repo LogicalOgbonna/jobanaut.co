@@ -18,6 +18,8 @@ export const globalStyles = {
   smFontSize: '0.75rem',
   fontSize: '0.95rem', // 1rem = 16px
   textFontSize: '0.9rem',
+  textOpacity: 0.8,
+  hoverOpacity: { opacity: 0.5 },
   fontFamilyLight: 'Clash-display-light',
   fontFamilyXLight: 'Clash-display-extra-light',
   fontFamily: 'Clash-display',

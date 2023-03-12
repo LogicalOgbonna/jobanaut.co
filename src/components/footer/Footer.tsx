@@ -9,7 +9,7 @@ import { FooterSocials } from './FooterSocials';
 export const Footer = () => {
   return (
     <Flex bg={globalStyles.primaryDarkColor} align='center'>
-      <ColumnFlex w='full' minH='368px'>
+      <ColumnFlex w={globalStyles.fullWidth} minH='368px'>
         <Flex
           alignItems='center'
           alignSelf='center'

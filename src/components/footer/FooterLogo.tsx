@@ -10,11 +10,10 @@ export const FooterLogo = () => {
     <a href={item.path} key={item.id} target='_blank' rel='noreferrer noopener'>
       <Text
         fontSize={globalStyles.textFontSize}
-        fontWeight={300}
         fontFamily={globalStyles.fontFamilyXLight}
-        _hover={{
-          opacity: 0.8,
-        }}
+        opacity={globalStyles.textOpacity}
+        fontWeight={300}
+        _hover={globalStyles.hoverOpacity}
       >
         {item.name}
       </Text>
@@ -22,7 +21,7 @@ export const FooterLogo = () => {
   ));
 
   return (
-    <ColumnFlex gap='9'>
+    <ColumnFlex gap='10'>
       <Logo showDesc image={logo} />
       <Flex color={globalStyles.whiteColor} gap='6' pl='85px'>
         {renderItems}

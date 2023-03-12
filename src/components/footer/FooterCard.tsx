@@ -15,6 +15,8 @@ export const FooterCard = ({ header, list }: Props) => {
       <Text
         fontSize={globalStyles.smFontSize}
         fontFamily={globalStyles.fontFamilyLight}
+        opacity={globalStyles.textOpacity}
+        _hover={globalStyles.hoverOpacity}
       >
         {item.name}
       </Text>
@@ -30,7 +32,7 @@ export const FooterCard = ({ header, list }: Props) => {
         {header}
       </Text>
 
-      <ColumnFlex gap='1.5'>{renderList}</ColumnFlex>
+      <ColumnFlex gap='2.5'>{renderList}</ColumnFlex>
     </ColumnFlex>
   );
 };

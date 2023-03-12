@@ -1,36 +1,36 @@
+@font-face {
+  font-family: Clash-display;
+  src: url(./Fonts/ClashDisplay-Medium.otf);
+}
+@font-face {
+  font-family: Clash-display-light;
+  src: url(./Fonts/ClashDisplay-Light.otf);
+}
+@font-face {
+  font-family: Clash-display-semibold;
+  src: url(./Fonts/ClashDisplay-Semibold.otf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+::selection {
+  background-color: #fff;
+  color: #010821;
+}
+
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background: #010b2e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 
-/* UTILITY CLASSESS */
-/* Background colours */
-.bg-sections {
-  background: #010821;
-}
-
-/* Font Sizes for sections */
-
-.h3-fonts {
-  font-family: Clash-display;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.span-fonts {
-  font-family: Clash-display-light;
-  font-weight: 300;
-  background: #585d75;
-  font-size: 18px;
-}

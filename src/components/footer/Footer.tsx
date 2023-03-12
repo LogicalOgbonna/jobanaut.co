@@ -1,17 +1,31 @@
-import { Flex, Grid, GridItem } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { globalStyles } from '../../styles';
+import { ColumnFlex } from '../shared';
 import { FooterLogo } from './FooterLogo';
+import { FooterSocials } from './FooterSocials';
 
 export const Footer = () => {
   return (
-    <Flex minH='368px' bg={globalStyles.primaryDarkColor}>
-      <Grid templateColumns='repeat(3,1fr)' w='full'>
-        <GridItem colSpan={1} border='2px solid red'>
+    <Flex bg={globalStyles.primaryDarkColor} align='center'>
+      <ColumnFlex w='full' minH='368px'>
+        <Flex
+          alignItems='center'
+          alignSelf='center'
+          w={globalStyles.containerWidth}
+          flex='1'
+        >
           <FooterLogo />
-        </GridItem>
-        <GridItem colSpan={2} border='2px solid green'></GridItem>
-        <GridItem colSpan={3} border='2px solid blue'></GridItem>
-      </Grid>
+        </Flex>
+
+        <ColumnFlex
+          borderTop='5px solid #010B2E'
+          alignItems='center'
+          justifyContent='center'
+          py='10'
+        >
+          <FooterSocials />
+        </ColumnFlex>
+      </ColumnFlex>
     </Flex>
   );
 };

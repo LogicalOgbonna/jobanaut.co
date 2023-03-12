@@ -4,13 +4,12 @@ import resume from '../assets/images/airesume.png';
 import cover from '../assets/images/cover.png';
 import career from '../assets/images/career.png';
 import jobwaiting from '../assets/images/jobwaiting.png';
-import { Unisection } from '../components';
-import { Flex } from '@chakra-ui/react';
+import { ColumnFlex, Unisection } from '../components';
 import { globalStyles } from '../styles';
 
 export const Home = () => {
   return (
-    <Flex direction='column' w={globalStyles.fullWidth} flex='1'>
+    <ColumnFlex w={globalStyles.fullWidth} flex='1'>
       <Unisection
         showBtn={true}
         title={'Discover the power of effortless job hunting with Jobanaut.'}
@@ -56,6 +55,6 @@ export const Home = () => {
         image={jobwaiting}
         addBg
       />
-    </Flex>
+    </ColumnFlex>
   );
 };

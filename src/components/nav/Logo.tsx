@@ -1,8 +1,9 @@
 import logo from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
-import { Center, Flex, Image, Text } from '@chakra-ui/react';
+import { Center, Image, Text } from '@chakra-ui/react';
 import { globalStyles } from '../../styles';
 import { JobaRoutes } from '../../utils';
+import { ColumnFlex } from '../shared';
 
 interface Props {
   showDesc?: boolean;
@@ -20,7 +21,7 @@ export const Logo = ({ showDesc, image }: Props) => {
       >
         <Image src={image ?? logo} alt='Logo' />
 
-        <Flex direction='column'>
+        <ColumnFlex>
           <Text
             fontFamily={globalStyles.fontFamilyMedium}
             color={globalStyles.whiteColor}
@@ -41,7 +42,7 @@ export const Logo = ({ showDesc, image }: Props) => {
               World-class automated job applier
             </Text>
           )}
-        </Flex>
+        </ColumnFlex>
       </Center>
     </Link>
   );

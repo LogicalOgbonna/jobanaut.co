@@ -31,6 +31,7 @@ export const Unisection = ({
       bg={addBg ? globalStyles.primaryDarkColor : 'transparent'}
       rounded={addBg ? '25px' : 'none'}
       flexDirection={isReverse ? 'row-reverse' : 'row'}
+      pt='3'
     >
       <ColumnFlex color='white' maxW='682px' gap='20px'>
         <Text

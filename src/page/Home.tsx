@@ -10,7 +10,7 @@ import { globalStyles } from '../styles';
 
 export const Home = () => {
   return (
-    <Flex direction='column' w={globalStyles.fullWidth}>
+    <Flex direction='column' w={globalStyles.fullWidth} flex='1'>
       <Unisection
         showBtn={true}
         title={'Discover the power of effortless job hunting with Jobanaut.'}

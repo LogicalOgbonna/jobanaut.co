@@ -1,10 +1,15 @@
 import logo from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
-import { Center, Image, Text } from '@chakra-ui/react';
+import { Center, Flex, Image, Text } from '@chakra-ui/react';
 import { globalStyles } from '../../styles';
 import { JobaRoutes } from '../../utils';
 
-export const Logo = () => {
+interface Props {
+  showDesc?: boolean;
+  image?: string;
+}
+
+export const Logo = ({ showDesc, image }: Props) => {
   return (
     <Link to={JobaRoutes.homepage}>
       <Center
@@ -13,16 +18,30 @@ export const Logo = () => {
           opacity: 0.8,
         }}
       >
-        <Image src={logo} alt='Logo' />
+        <Image src={image ?? logo} alt='Logo' />
 
-        <Text
-          fontFamily={globalStyles.fontFamilyMedium}
-          color={globalStyles.whiteColor}
-          fontWeight={globalStyles.semibold}
-          fontSize='2.5rem'
-        >
-          Jobanaut.co
-        </Text>
+        <Flex direction='column'>
+          <Text
+            fontFamily={globalStyles.fontFamilyMedium}
+            color={globalStyles.whiteColor}
+            fontWeight={globalStyles.semibold}
+            fontSize='2.5rem'
+          >
+            Jobanaut.co
+          </Text>
+
+          {showDesc && (
+            <Text
+              fontFamily={globalStyles.fontFamilyLight}
+              color={globalStyles.whiteColor}
+              fontWeight={globalStyles.normalFontWeight}
+              fontSize={globalStyles.textFontSize}
+              opacity={0.7}
+            >
+              World-class automated job applier
+            </Text>
+          )}
+        </Flex>
       </Center>
     </Link>
   );

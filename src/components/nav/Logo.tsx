@@ -8,19 +8,18 @@ export const Logo = () => {
   return (
     <Link to={JobaRoutes.homepage}>
       <Center
-        bg='transparent'
         gap='5'
         _hover={{
           opacity: 0.8,
         }}
       >
-        <Image src={logo} alt='Logo' bg='transparent' />
+        <Image src={logo} alt='Logo' />
 
         <Text
-          fontFamily={globalStyles.fontFamilyBold}
+          fontFamily={globalStyles.fontFamilyMedium}
           color={globalStyles.whiteColor}
+          fontWeight={globalStyles.semibold}
           fontSize='2.5rem'
-          bg='transparent'
         >
           Jobanaut.co
         </Text>

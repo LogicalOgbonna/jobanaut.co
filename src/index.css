@@ -1,6 +1,6 @@
 @font-face {
   font-family: Clash-display;
-  src: url(./assets/Fonts/ClashDisplay-Medium.otf);
+  src: url(./assets/Fonts/ClashDisplay-Regular.otf);
 }
 @font-face {
   font-family: Clash-display-light;
@@ -9,6 +9,19 @@
 @font-face {
   font-family: Clash-display-semibold;
   src: url(./assets/Fonts/ClashDisplay-Semibold.otf);
+}
+
+@font-face {
+  font-family: Clash-display-bold;
+  src: url(./assets/Fonts/ClashDisplay-Bold.otf);
+}
+@font-face {
+  font-family: Clash-display-extra-light;
+  src: url(./assets/Fonts/ClashDisplay-Extralight.otf);
+}
+@font-face {
+  font-family: Clash-display-medium;
+  src: url(./assets/Fonts/ClashDisplay-Medium.otf);
 }
 
 body {
@@ -22,15 +35,17 @@ body {
   color: #010821;
 }
 
-
 *::-webkit-scrollbar {
   display: none;
 }
 
-* {
+html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background: #010b2e;
+  font-family: Clash-display;
 }
 
-
+* {
+  background-color: transparent;
+}

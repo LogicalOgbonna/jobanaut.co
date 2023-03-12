@@ -11,7 +11,11 @@ export const Nav = () => {
       align='center'
       justify='center'
     >
-      <HStack w={globalStyles.containerWidth} bg='transparent'>
+      <HStack
+        w={globalStyles.containerWidth}
+        bg='transparent'
+        justify='space-between'
+      >
         <Logo />
       </HStack>
     </Flex>

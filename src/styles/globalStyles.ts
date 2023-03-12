@@ -19,6 +19,9 @@ export const globalStyles = {
   fontSize: '0.95rem', // 1rem = 16px
   textFontSize: '0.9rem',
   fontFamilyLight: 'Clash-display-light',
+  fontFamilyXLight: 'Clash-display-extra-light',
   fontFamily: 'Clash-display',
-  fontFamilyBold: 'Clash-display-semibold',
+  fontFamilyMedium: 'Clash-display-medium',
+  fontFamilyBold: 'Clash-display-bold',
+  fontFamilySemiBold: 'Clash-display-semibold',
 };

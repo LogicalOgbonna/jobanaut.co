@@ -30,12 +30,20 @@ export const Unisection = ({
       gap='100px'
       bg={addBg ? globalStyles.primaryDarkColor : 'transparent'}
       rounded={addBg ? '25px' : 'none'}
-      flexDirection={isReverse ? 'row-reverse' : 'row'}
+      flexDirection={{
+        base: 'column-reverse',
+        xl: isReverse ? 'row-reverse' : 'row',
+      }}
+      px={globalStyles.globalPx}
       pt='3'
     >
-      <ColumnFlex color='white' maxW='682px' gap='20px'>
+      <ColumnFlex
+        color='white'
+        maxW={{ base: globalStyles.fullWidth, xl: '682px' }}
+        gap='20px'
+      >
         <Text
-          fontSize='3.25rem'
+          fontSize={{ base: '19px', xl: '3.25rem' }}
           maxW='612px'
           lineHeight={1.4}
           fontFamily={globalStyles.fontFamilyMedium}

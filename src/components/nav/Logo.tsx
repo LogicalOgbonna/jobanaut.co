@@ -19,14 +19,18 @@ export const Logo = ({ showDesc, image }: Props) => {
           opacity: 0.8,
         }}
       >
-        <Image src={image ?? logo} alt='Logo' />
+        <Image
+          src={image ?? logo}
+          alt='Logo'
+          boxSize={{ base: '30px', xl: 'max-content' }}
+        />
 
         <ColumnFlex>
           <Text
             fontFamily={globalStyles.fontFamilyMedium}
             color={globalStyles.whiteColor}
             fontWeight={globalStyles.semibold}
-            fontSize='2.5rem'
+            fontSize={{ base: '1.5rem', md: '2.5rem' }}
           >
             Jobanaut.co
           </Text>

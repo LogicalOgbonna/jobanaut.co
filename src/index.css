@@ -1,14 +1,14 @@
 @font-face {
   font-family: Clash-display;
-  src: url(./Fonts/ClashDisplay-Medium.otf);
+  src: url(./assets/Fonts/ClashDisplay-Medium.otf);
 }
 @font-face {
   font-family: Clash-display-light;
-  src: url(./Fonts/ClashDisplay-Light.otf);
+  src: url(./assets/Fonts/ClashDisplay-Light.otf);
 }
 @font-face {
   font-family: Clash-display-semibold;
-  src: url(./Fonts/ClashDisplay-Semibold.otf);
+  src: url(./assets/Fonts/ClashDisplay-Semibold.otf);
 }
 
 body {

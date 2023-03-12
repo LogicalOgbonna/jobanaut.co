@@ -1,9 +1,9 @@
-import hero from '../images/jobaa.png';
-import create from '../images/jobalerts.png';
-import resume from '../images/airesume.png';
-import cover from '../images/cover.png';
-import career from '../images/career.png';
-import jobwaiting from '../images/jobwaiting.png';
+import hero from '../assets/images/jobaa.png';
+import create from '../assets/images/jobalerts.png';
+import resume from '../assets/images/airesume.png';
+import cover from '../assets/images/cover.png';
+import career from '../assets/images/career.png';
+import jobwaiting from '../assets/images/jobwaiting.png';
 import { Unisection } from '../components';
 import { Flex } from '@chakra-ui/react';
 import { globalStyles } from '../styles';

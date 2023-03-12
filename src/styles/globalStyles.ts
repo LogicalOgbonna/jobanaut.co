@@ -2,8 +2,8 @@ export const globalStyles = {
   containerWidth: {
     base: '100%',
     lg: '95%',
-    xl: '1020px',
-    '2xl': '1200px',
+    xl: '1210px',
+    '2xl': '1350px',
   },
   fullWidth: '100%',
   fullHeight: '100vh',

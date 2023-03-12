@@ -1,5 +1,19 @@
-import React from 'react';
+import { Flex, HStack } from '@chakra-ui/react';
+import { globalStyles } from '../../styles';
+import { Logo } from './Logo';
 
 export const Nav = () => {
-  return <div>Nav</div>;
+  return (
+    <Flex
+      w={globalStyles.fullWidth}
+      minH='100px'
+      bg={globalStyles.primaryDarkColor}
+      align='center'
+      justify='center'
+    >
+      <HStack w={globalStyles.containerWidth} bg='transparent'>
+        <Logo />
+      </HStack>
+    </Flex>
+  );
 };

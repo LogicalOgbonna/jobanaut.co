@@ -7,7 +7,7 @@ export const FooterSocials = () => {
   const renderLinks = footerSocialsLinks.map((link) => (
     <Link to={link.path} key={link.id}>
       <Text
-        fontSize={globalStyles.textFontSize}
+        fontSize={{ base: '7px', md: globalStyles.textFontSize }}
         fontFamily={globalStyles.fontFamily}
         color={globalStyles.whiteColor}
         opacity={globalStyles.textOpacity}
@@ -30,8 +30,8 @@ export const FooterSocials = () => {
       align='center'
       justifyContent='space-between'
     >
-      <HStack gap='3'>{renderLinks}</HStack>
-      <HStack gap='5'>{renderSocials}</HStack>
+      <HStack gap={{ base: 1, md: '3' }}>{renderLinks}</HStack>
+      <HStack gap={{ base: '0', md: '5' }}>{renderSocials}</HStack>
     </Flex>
   );
 };

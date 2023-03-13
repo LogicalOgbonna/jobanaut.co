@@ -1,4 +1,4 @@
-import { Button, Flex, Image, Text } from '@chakra-ui/react';
+import { Button, Flex, Image, LayoutProps, Text } from '@chakra-ui/react';
 import { globalStyles } from '../../styles';
 import { ColumnFlex } from './ColumnFlex';
 
@@ -10,6 +10,7 @@ interface Props {
   addBg?: boolean;
   desc?: string;
   isReverse?: boolean;
+  display?: LayoutProps['display'];
 }
 
 export const Unisection = ({
@@ -20,6 +21,7 @@ export const Unisection = ({
   desc,
   isReverse,
   showGetBtn,
+  display,
 }: Props) => {
   return (
     <Flex
@@ -27,18 +29,28 @@ export const Unisection = ({
       align='center'
       alignSelf='center'
       justify='center'
-      gap='100px'
+      display={display}
+      gap={{ base: '20px', xl: '100px' }}
       bg={addBg ? globalStyles.primaryDarkColor : 'transparent'}
+      px={{ base: 0, lg: 4 }}
       rounded={addBg ? '25px' : 'none'}
-      flexDirection={isReverse ? 'row-reverse' : 'row'}
+      flexDirection={{
+        base: 'column-reverse',
+        lg: isReverse ? 'row-reverse' : 'row',
+      }}
       pt='3'
     >
-      <ColumnFlex color='white' maxW='682px' gap='20px'>
+      <ColumnFlex
+        color='white'
+        maxW={{ base: globalStyles.fullWidth, xl: '682px' }}
+        gap='20px'
+      >
         <Text
-          fontSize='3.25rem'
+          fontSize={{ base: '19px', lg: '2.5rem', xl: '3.25rem' }}
           maxW='612px'
           lineHeight={1.4}
           fontFamily={globalStyles.fontFamilyMedium}
+          textAlign={{ base: 'center', md: 'left' }}
         >
           {title}
         </Text>

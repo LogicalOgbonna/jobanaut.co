@@ -13,7 +13,7 @@ export const FooterCard = ({ header, list }: Props) => {
   const renderList = list.map((item) => (
     <Link to={item.path} key={item.id}>
       <Text
-        fontSize={globalStyles.smFontSize}
+        fontSize={{ base: '8px', md: globalStyles.smFontSize }}
         fontFamily={globalStyles.fontFamilyLight}
         opacity={globalStyles.textOpacity}
         _hover={globalStyles.hoverOpacity}

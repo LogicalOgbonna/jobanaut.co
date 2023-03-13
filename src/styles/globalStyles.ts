@@ -26,4 +26,5 @@ export const globalStyles = {
   fontFamilyMedium: 'Clash-display-medium',
   fontFamilyBold: 'Clash-display-bold',
   fontFamilySemiBold: 'Clash-display-semibold',
+  globalPx: { base: 4, lg: 5, xl: 0 },
 };

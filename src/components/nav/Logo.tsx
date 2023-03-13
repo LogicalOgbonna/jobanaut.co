@@ -19,14 +19,18 @@ export const Logo = ({ showDesc, image }: Props) => {
           opacity: 0.8,
         }}
       >
-        <Image src={image ?? logo} alt='Logo' />
+        <Image
+          src={image ?? logo}
+          alt='Logo'
+          boxSize={{ base: '40px', md: '50px', lg: 'max-content' }}
+        />
 
         <ColumnFlex>
           <Text
             fontFamily={globalStyles.fontFamilyMedium}
             color={globalStyles.whiteColor}
             fontWeight={globalStyles.semibold}
-            fontSize='2.5rem'
+            fontSize={{ base: '1.5rem', md: '2.5rem' }}
           >
             Jobanaut.co
           </Text>
@@ -36,7 +40,7 @@ export const Logo = ({ showDesc, image }: Props) => {
               fontFamily={globalStyles.fontFamilyLight}
               color={globalStyles.whiteColor}
               fontWeight={globalStyles.normalFontWeight}
-              fontSize={globalStyles.textFontSize}
+              fontSize={{ base: '8px', md: globalStyles.textFontSize }}
               opacity={globalStyles.textOpacity}
             >
               World-class automated job applier

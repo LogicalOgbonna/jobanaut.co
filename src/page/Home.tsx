@@ -1,23 +1,23 @@
-import hero from '../assets/images/jobaa.png';
 import create from '../assets/images/jobalerts.png';
 import resume from '../assets/images/airesume.png';
 import cover from '../assets/images/cover.png';
 import career from '../assets/images/career.png';
-import jobwaiting from '../assets/images/jobwaiting.png';
-import { ColumnFlex, Unisection } from '../components';
+import jobanut from '../assets/images/jobanut.png';
+import { ActionCard, ColumnFlex, Hero, Unisection } from '../components';
 import { globalStyles } from '../styles';
+import { Image } from '@chakra-ui/react';
 
 export const Home = () => {
   return (
-    <ColumnFlex w={globalStyles.fullWidth} flex='1' gap='80px' my='80px'>
-      <Unisection
-        showBtn
-        title='Discover the power of effortless job hunting with Jobanaut.'
-        desc='Welcome to Jobanaut, the easiest way to find your dream job. With our powerful search engine and custom alerts, you will never miss a great opportunity.'
-        addBg
-        image={hero}
-        showGetBtn
-      />
+    <ColumnFlex
+      w={globalStyles.fullWidth}
+      flex='1'
+      px={globalStyles.globalPx}
+      gap='80px'
+      position='relative'
+      my={{ base: '50px', md: '80px' }}
+    >
+      <Hero />
 
       <Unisection
         title='Create personalized Job Alerts'
@@ -45,11 +45,15 @@ export const Home = () => {
         isReverse
       />
 
-      <Unisection
-        showBtn
-        title='Your Perfect Job is waiting for you'
-        addBg
-        image={jobwaiting}
+      <ActionCard />
+
+      <Image
+        src={jobanut}
+        boxSize={{ base: '154px', lg: 'max-content' }}
+        position='absolute'
+        bottom={{ base: '130px', lg: '-180px' }}
+        alignSelf='center'
+        zIndex={2}
       />
     </ColumnFlex>
   );

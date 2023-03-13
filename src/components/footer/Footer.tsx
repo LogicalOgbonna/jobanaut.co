@@ -9,7 +9,12 @@ import { FooterSocials } from './FooterSocials';
 export const Footer = () => {
   return (
     <Flex bg={globalStyles.primaryDarkColor} align='center'>
-      <ColumnFlex w={globalStyles.fullWidth} minH='368px' pt='5' px='2'>
+      <ColumnFlex
+        w={globalStyles.fullWidth}
+        minH={{ base: '250px', md: '368px' }}
+        pt={{ base: '5', lg: 0 }}
+        px='2'
+      >
         <Flex
           alignItems={{ base: 'flex-start', md: 'center' }}
           alignSelf='center'
@@ -23,7 +28,7 @@ export const Footer = () => {
             h='300px'
             border='2px solid #010B2E'
             ml='10'
-            display={{ base: 'none', xl: 'inline-block' }}
+            display={{ base: 'none', lg: 'inline-block' }}
           />
 
           <HStack
@@ -39,7 +44,7 @@ export const Footer = () => {
         </Flex>
 
         <ColumnFlex
-          borderTop={{ base: 'none', xl: '5px solid #010B2E' }}
+          borderTop={{ base: 'none', lg: '5px solid #010B2E' }}
           alignItems='center'
           justifyContent='center'
           py='10'

@@ -22,7 +22,7 @@ export const Logo = ({ showDesc, image }: Props) => {
         <Image
           src={image ?? logo}
           alt='Logo'
-          boxSize={{ base: '30px', xl: 'max-content' }}
+          boxSize={{ base: '40px', md: '50px', lg: 'max-content' }}
         />
 
         <ColumnFlex>
@@ -40,7 +40,7 @@ export const Logo = ({ showDesc, image }: Props) => {
               fontFamily={globalStyles.fontFamilyLight}
               color={globalStyles.whiteColor}
               fontWeight={globalStyles.normalFontWeight}
-              fontSize={{ base: '5px', md: globalStyles.textFontSize }}
+              fontSize={{ base: '8px', md: globalStyles.textFontSize }}
               opacity={globalStyles.textOpacity}
             >
               World-class automated job applier

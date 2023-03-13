@@ -21,12 +21,12 @@ export const FooterLogo = () => {
   ));
 
   return (
-    <ColumnFlex gap='10'>
+    <ColumnFlex gap={{ base: '10', lg: '10' }}>
       <Logo showDesc image={logo} />
       <Flex
         color={globalStyles.whiteColor}
         gap={{ base: 3, md: '6' }}
-        pl={{ base: '0', xl: '85px' }}
+        pl={{ base: '0', lg: '85px' }}
       >
         {renderItems}
       </Flex>

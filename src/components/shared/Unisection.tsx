@@ -27,14 +27,14 @@ export const Unisection = ({
       align='center'
       alignSelf='center'
       justify='center'
-      gap='100px'
+      gap={{ base: '20px', xl: '100px' }}
       bg={addBg ? globalStyles.primaryDarkColor : 'transparent'}
+      px={{ base: 0, lg: 4 }}
       rounded={addBg ? '25px' : 'none'}
       flexDirection={{
         base: 'column-reverse',
-        xl: isReverse ? 'row-reverse' : 'row',
+        lg: isReverse ? 'row-reverse' : 'row',
       }}
-      px={globalStyles.globalPx}
       pt='3'
     >
       <ColumnFlex
@@ -43,7 +43,7 @@ export const Unisection = ({
         gap='20px'
       >
         <Text
-          fontSize={{ base: '19px', xl: '3.25rem' }}
+          fontSize={{ base: '19px', lg: '2.5rem', xl: '3.25rem' }}
           maxW='612px'
           lineHeight={1.4}
           fontFamily={globalStyles.fontFamilyMedium}

@@ -1,23 +1,21 @@
-import hero from '../assets/images/jobaa.png';
 import create from '../assets/images/jobalerts.png';
 import resume from '../assets/images/airesume.png';
 import cover from '../assets/images/cover.png';
 import career from '../assets/images/career.png';
 import jobwaiting from '../assets/images/jobwaiting.png';
-import { ColumnFlex, Unisection } from '../components';
+import { ColumnFlex, Hero, Unisection } from '../components';
 import { globalStyles } from '../styles';
 
 export const Home = () => {
   return (
-    <ColumnFlex w={globalStyles.fullWidth} flex='1' gap='80px' my='80px'>
-      <Unisection
-        showBtn
-        title='Discover the power of effortless job hunting with Jobanaut.'
-        desc='Welcome to Jobanaut, the easiest way to find your dream job. With our powerful search engine and custom alerts, you will never miss a great opportunity.'
-        addBg
-        image={hero}
-        showGetBtn
-      />
+    <ColumnFlex
+      w={globalStyles.fullWidth}
+      flex='1'
+      px={globalStyles.globalPx}
+      gap='80px'
+      my={{ base: '50px', md: '80px' }}
+    >
+      <Hero />
 
       <Unisection
         title='Create personalized Job Alerts'

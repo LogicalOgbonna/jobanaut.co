@@ -32,13 +32,13 @@ export const Unisection = ({
       display={display}
       gap={{ base: '20px', xl: '100px' }}
       bg={addBg ? globalStyles.primaryDarkColor : 'transparent'}
-      px={{ base: 0, lg: 4 }}
+      px={{ base: 4, lg: 4 }}
       rounded={addBg ? '25px' : 'none'}
       flexDirection={{
         base: 'column-reverse',
         lg: isReverse ? 'row-reverse' : 'row',
       }}
-      pt='3'
+      py='5'
     >
       <ColumnFlex
         color='white'

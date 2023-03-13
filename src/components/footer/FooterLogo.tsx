@@ -9,7 +9,7 @@ export const FooterLogo = () => {
   const renderItems = footerLogoItems.map((item) => (
     <a href={item.path} key={item.id} target='_blank' rel='noreferrer noopener'>
       <Text
-        fontSize={globalStyles.textFontSize}
+        fontSize={{ base: '7px', md: globalStyles.textFontSize }}
         fontFamily={globalStyles.fontFamilyXLight}
         opacity={globalStyles.textOpacity}
         fontWeight={300}
@@ -23,7 +23,11 @@ export const FooterLogo = () => {
   return (
     <ColumnFlex gap='10'>
       <Logo showDesc image={logo} />
-      <Flex color={globalStyles.whiteColor} gap='6' pl='85px'>
+      <Flex
+        color={globalStyles.whiteColor}
+        gap={{ base: 3, md: '6' }}
+        pl={{ base: '0', xl: '85px' }}
+      >
         {renderItems}
       </Flex>
     </ColumnFlex>

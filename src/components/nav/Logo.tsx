@@ -40,7 +40,7 @@ export const Logo = ({ showDesc, image }: Props) => {
               fontFamily={globalStyles.fontFamilyLight}
               color={globalStyles.whiteColor}
               fontWeight={globalStyles.normalFontWeight}
-              fontSize={globalStyles.textFontSize}
+              fontSize={{ base: '5px', md: globalStyles.textFontSize }}
               opacity={globalStyles.textOpacity}
             >
               World-class automated job applier

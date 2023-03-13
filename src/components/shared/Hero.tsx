@@ -7,16 +7,15 @@ import { globalStyles } from '../../styles';
 export const Hero = () => {
   return (
     <>
-      <Box display={{ base: 'none', md: 'inline-block' }}>
-        <Unisection
-          showBtn
-          title='Discover the power of effortless job hunting with Jobanaut.'
-          desc='Welcome to Jobanaut, the easiest way to find your dream job. With our powerful search engine and custom alerts, you will never miss a great opportunity.'
-          addBg
-          image={hero}
-          showGetBtn
-        />
-      </Box>
+      <Unisection
+        display={{ base: 'none', md: 'flex' }}
+        showBtn
+        title='Discover the power of effortless job hunting with Jobanaut.'
+        desc='Welcome to Jobanaut, the easiest way to find your dream job. With our powerful search engine and custom alerts, you will never miss a great opportunity.'
+        addBg
+        image={hero}
+        showGetBtn
+      />
 
       {/* The mobile section */}
       <Flex
@@ -29,6 +28,7 @@ export const Hero = () => {
         p='2.5'
         overflow='visible'
         rounded='10px'
+        gap='2'
       >
         <Text
           fontSize='19px'

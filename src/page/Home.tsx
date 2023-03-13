@@ -49,9 +49,9 @@ export const Home = () => {
 
       <Image
         src={jobanut}
-        boxSize={{ base: '154px', lg: 'max-content' }}
+        boxSize={{ base: '154px', md: 'max-content' }}
         position='absolute'
-        bottom={{ base: '130px', lg: '-180px' }}
+        bottom={{ base: '130px', md: '-180px' }}
         alignSelf='center'
         zIndex={2}
       />

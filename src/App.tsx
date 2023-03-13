@@ -8,6 +8,7 @@ import { JobaRoutes } from './utils';
 import { ScrollTop } from './components';
 import { GlobalLayout } from './layout';
 import { Home } from './page';
+import { ShowSideNavContext } from './context';
 
 export function App() {
   const router = createBrowserRouter(
@@ -22,5 +23,9 @@ export function App() {
     )
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <ShowSideNavContext>
+      <RouterProvider router={router} />
+    </ShowSideNavContext>
+  );
 }

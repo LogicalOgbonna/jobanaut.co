@@ -1,6 +1,7 @@
-import { Button, Flex, Image, LayoutProps, Text } from '@chakra-ui/react';
-import { globalStyles } from '../../styles';
-import { ColumnFlex } from './ColumnFlex';
+import { Button, Flex, Image, LayoutProps, Text } from "@chakra-ui/react";
+import { globalStyles } from "../../styles";
+import gotoPage from "../../utils/pageRouting";
+import { ColumnFlex } from "./ColumnFlex";
 
 interface Props {
   showGetBtn?: boolean;
@@ -10,7 +11,7 @@ interface Props {
   addBg?: boolean;
   desc?: string;
   isReverse?: boolean;
-  display?: LayoutProps['display'];
+  display?: LayoutProps["display"];
 }
 
 export const Unisection = ({
@@ -26,31 +27,31 @@ export const Unisection = ({
   return (
     <Flex
       w={globalStyles.containerWidth}
-      align='center'
-      alignSelf='center'
-      justify='center'
+      align="center"
+      alignSelf="center"
+      justify="center"
       display={display}
-      gap={{ base: '20px', xl: '100px' }}
-      bg={addBg ? globalStyles.primaryDarkColor : 'transparent'}
+      gap={{ base: "20px", xl: "100px" }}
+      bg={addBg ? globalStyles.primaryDarkColor : "transparent"}
       px={{ base: 4, lg: 4 }}
-      rounded={addBg ? '25px' : 'none'}
+      rounded={addBg ? "25px" : "none"}
       flexDirection={{
-        base: 'column-reverse',
-        lg: isReverse ? 'row-reverse' : 'row',
+        base: "column-reverse",
+        lg: isReverse ? "row-reverse" : "row",
       }}
-      py='5'
+      py="5"
     >
       <ColumnFlex
-        color='white'
-        maxW={{ base: globalStyles.fullWidth, xl: '682px' }}
-        gap='20px'
+        color="white"
+        maxW={{ base: globalStyles.fullWidth, xl: "682px" }}
+        gap="20px"
       >
         <Text
-          fontSize={{ base: '19px', lg: '2.5rem', xl: '3.25rem' }}
-          maxW='612px'
+          fontSize={{ base: "19px", lg: "2.5rem", xl: "3.25rem" }}
+          maxW="612px"
           lineHeight={1.4}
           fontFamily={globalStyles.fontFamilyMedium}
-          textAlign={{ base: 'center', md: 'left' }}
+          textAlign={{ base: "center", md: "left" }}
         >
           {title}
         </Text>
@@ -60,33 +61,34 @@ export const Unisection = ({
           fontSize={globalStyles.fontSize}
           fontFamily={globalStyles.fontFamilyLight}
           opacity={globalStyles.textOpacity}
-          pb='3'
+          pb="3"
         >
           {desc}
         </Text>
 
         {showBtn && (
-          <Flex align='center' gap='6'>
+          <Flex align="center" gap="6">
             <Button
-              w='231px'
-              minH='65px'
-              bgColor='#2671CA'
-              fontSize='1.2rem'
+              w="231px"
+              minH="65px"
+              bgColor="#2671CA"
+              fontSize="1.2rem"
               _hover={{
-                bgColor: 'rgba(38, 113, 202, 0.8)',
+                bgColor: "rgba(38, 113, 202, 0.8)",
               }}
+              onClick={() => gotoPage("https://www.app.jobanaut.co/sign-up")}
             >
               Get Started
             </Button>
 
             {showGetBtn && (
               <Button
-                w='231px'
-                minH='65px'
-                bgColor='#DCA509'
-                fontSize='1.2rem'
+                w="231px"
+                minH="65px"
+                bgColor="#DCA509"
+                fontSize="1.2rem"
                 _hover={{
-                  bgColor: 'rgba(220, 165, 9, 0.8)',
+                  bgColor: "rgba(220, 165, 9, 0.8)",
                 }}
               >
                 Contact Us

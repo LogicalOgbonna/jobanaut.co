@@ -6,7 +6,7 @@ export const navItems: NavModel[] = [
   // { path: '#', name: 'Pricing', id: nanoid() },
   // { path: '#', name: 'Blog', id: nanoid() },
   { path: "#", name: "About us", id: nanoid() },
-  { path: "https://app.jobanaut.co/sing-in", name: "Login", id: nanoid() },
+  { path: "https://app.jobanaut.co/sign-in", name: "Login", id: nanoid() },
   {
     path: "https://www.app.jobanaut.co/sign-up",
     name: "Get Started",

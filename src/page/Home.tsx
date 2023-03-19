@@ -15,7 +15,7 @@ export const Home = () => {
       px={globalStyles.globalPx}
       gap='80px'
       position='relative'
-      my={{ base: '50px', md: '80px' }}
+      my={{ base: '100px', md: '150px' }}
     >
       <Hero />
 

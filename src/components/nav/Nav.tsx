@@ -20,6 +20,8 @@ export const Nav = () => {
       justify='center'
       bg={globalStyles.primaryDarkColor}
       px={globalStyles.globalPx}
+      zIndex={100}
+      position="fixed"
     >
       <HStack
         w={globalStyles.containerWidth}

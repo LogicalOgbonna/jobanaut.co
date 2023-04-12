@@ -7,39 +7,10 @@ import jobanut from "../assets/images/jobanut.png";
 import { ActionCard, ColumnFlex, Hero, Unisection } from "../components";
 import { globalStyles } from "../styles";
 import { Image } from "@chakra-ui/react";
-import { Head } from "../components/shared/Head";
-import { Helmet } from "react-helmet";
 
 export const Home = () => {
   return (
     <>
-      <Helmet>
-        <title>Jobanaut - Home</title>
-        <meta
-          name="description"
-          content="Jobanaut is a state-of-the-art job search and resume writing platform that harnesses the power of AI to provide job seekers with tailored job recommendations and professionally written resumes, enabling them to land their dream jobs more easily and efficiently than ever before."
-        />
-
-        {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="jobanaut.co" />
-        <meta property="og:title" content="Jobanaut" />
-        <meta
-          property="og:description"
-          content="Jobanaut is a state-of-the-art job search and resume writing platform that harnesses the power of AI to provide job seekers with tailored job recommendations and professionally written resumes, enabling them to land their dream jobs more easily and efficiently than ever before."
-        />
-        <meta property="og:image" content="https://jobanaut.co/images/banner.png" />
-
-        {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="jobanaut.co" />
-        <meta property="twitter:url" content="jobanaut.co" />
-        <meta name="twitter:title" content="Jobanaut" />
-        <meta
-          name="twitter:description"
-          content="Jobanaut is a state-of-the-art job search and resume writing platform that harnesses the power of AI to provide job seekers with tailored job recommendations and professionally written resumes, enabling them to land their dream jobs more easily and efficiently than ever before."
-        />
-        <meta name="twitter:image" content="https://jobanaut.co/images/banner.png" />
-      </Helmet>
       <ColumnFlex
         w={globalStyles.fullWidth}
         flex="1"
